@@ -11,6 +11,7 @@
 const CONFIG = {
   // ======== 1. THÔNG TIN CHUNG ========
   title: "THƯ MỜI CƯỚI Hải Linh & Vũ Mây",
+  description: "Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh & Vũ Mây – 17.01.2027.",   // hiện khi chia sẻ link qua Zalo/Facebook
   groomName: "Hải Linh",                // tên hiện ở trên / bên trái
   brideName: "Vũ Mây",                // tên hiện ở dưới / bên phải
   coverDate: "17.01\n2027",               // ngày hiện giữa hai tên ở bìa
@@ -47,9 +48,8 @@ const CONFIG = {
 
   // ======== 9. XÁC NHẬN THAM DỰ -> GỬI VỀ TELEGRAM ========
   telegram: {
-    botToken: "6666766637:AAEqFh6atOF-oMswAMq0A7qfBnBLMpuGsWE",      // token bot lấy từ @BotFather, dạng "123456789:AAH..."
-    chatId: "-4644267354",        // id nhóm chat (nhóm thường là số âm), ví dụ "-1001234567890"
-    // endpoint: "https://api.telegram.org/bot${botToken}/sendMessage"       // (tuỳ chọn, an toàn hơn) link proxy của bạn. Điền cái này thì không cần botToken
+    endpoint: "https://thiep-cuoi.ten-ban.workers.dev",
+    cooldownSeconds: 30,
   },
   thankYou: {          // popup hiện sau khi khách bấm GỬI NGAY. {name} sẽ được thay bằng tên khách
     title: "Cảm Ơn Bạn!",
@@ -107,6 +107,9 @@ const CONFIG = {
 };
 
 /* Tạo danh sách thay chữ từ CONFIG (không cần sửa) */
+/* Tải trước ảnh bìa để thiệp hiện nhanh hơn */
+(function () { try { var l = document.createElement("link"); l.rel = "preload"; l.as = "image"; l.href = CONFIG.images.cardClosed; document.head.appendChild(l); } catch (e) {} })();
+
 function buildMapping() {
   const C = CONFIG, g = C.groomFamily, b = C.brideFamily, c = C.ceremony, p = C.party, v = C.venue;
   return [
@@ -124,8 +127,7 @@ function buildMapping() {
 
         <title>THƯ MỜI CƯỚI Hải Linh &amp; Vũ Mây </title>
         <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" id="meta-desc" content="Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh &amp; Vũ Mây – 17.01.2027.">
         <script type="text/javascript">
             !function(e, t, i) {
                 var a, n = e.innerWidth;
@@ -136,7 +138,7 @@ function buildMapping() {
                     var o = 1;
                     w = 420;
                     w != n && (o = n / w),
-                    a = "width=" + w + ", user-scalable=no, initial-scale=" + o + ", minimum-scale=" + o + ", maximum-scale=" + o
+                    a = "width=" + w + ", initial-scale=" + o + ", viewport-fit=cover"
                 }
                 var l = t.createElement("meta");
                 l.name = "viewport",
@@ -144,23 +146,21 @@ function buildMapping() {
                 t.head.appendChild(l)
             }(window, document, "DISPLAY");
         </script>
-        <link rel="canonical" href="https://github.com/hailinhc10/thiepcuoi">
-        <meta property="og:url" content="https://github.com/hailinhc10/thiepcuoi">
         <meta property="og:title" content="THƯ MỜI CƯỚI Hải Linh &amp; Vũ Mây ">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://cdn.upanhlaylink.com/i/9ixksGXw.jpg">
-        <meta property="og:description" content="">
+        <meta property="og:description" id="og-desc" content="Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh &amp; Vũ Mây – 17.01.2027.">
+        <meta property="og:locale" content="vi_VN">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="theme-color" content="#7d1f2a">
         <meta name="format-detection" content="telephone=no">
-        <meta name="robots" content="">
-        <link rel="icon" href="https://cdn.upanhlaylink.com/i/9ixksGXw.jpg" sizes="16x16"/>
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="icon" href="https://cdn.upanhlaylink.com/i/9ixksGXw.jpg"/>
         <link rel="dns-prefetch" href="https://statics.pancake.vn">
         <link rel="dns-prefetch" href="https://content.pancake.vn">
-        <link rel="dns-prefetch" href="https://www.youtube.com">
         <link rel="dns-prefetch" href="https://a.pancake.vn">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
-        <link rel="preconnect" href="https://analytics.tiktok.com/i18n/pixel">
-        <link rel="preconnect" href="https://analytics.tiktok.com/api/v2/pixel">
         <link rel="preconnect" href="https://api.webcake.io">
         <link rel="stylesheet" href="https://api.webcake.io/animate/animatev4.css?v=1">
         <link rel="stylesheet" href="https://api.webcake.io/render_iconfont/iconfont.css?v=1">
@@ -10368,7 +10368,7 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                         </div>
                         <div id="w-m1kk35d9" class="com-html-box p-absolute">
                             <div class="frame-html-box full-width full-height">
-                                <iframe id="map-frame" width="600" height="450" style="border:0;" allowfullscreen="" loading="eager" fetchpriority="high" decoding="sync" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                                <iframe id="map-frame" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Bản đồ địa điểm tổ chức" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             </div>
                         </div>
                         <div id="w-uatbpub6" class="com-rectangle p-absolute">
@@ -13908,8 +13908,6 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                 //  });
             }
         </script>
-        <script type="text/javascript" src="/webcake/v4/53a2ed65-4faf-4e6e-9e51-aca81aa36891"></script>
-        <img height="1" width="1" alt="" style="display:none" src="/page_view.gif?pid=c371b426-e477-45fb-8bf8-f62c04e78290"/>
         <script>
             ;(function() {
                 const params = new URLSearchParams(window.location.search)
@@ -13952,7 +13950,6 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
             window.addEventListener('resize', windowHeight)
             windowHeight()
         </script>
-        <script async src="https://a.pancake.vn/js/fingerprint.js"></script>
         <script>
             ( () => {
                 const SOURCE = ['facebook', 'fbclid', 'google', 'gclid', 'tiktok', 'ttclid', 'zalo', 'gidzl', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id', 'aff', 'wbraid', 'gbraid', 'ybai'];
@@ -14019,6 +14016,8 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                 function hide(id) { var e = g(id); if (e) e.style.display = 'none'; }
                 var card = g('3subauj7');
                 if (card) {
+                    card.setAttribute('role', 'button'); card.setAttribute('tabindex', '0'); card.setAttribute('aria-label', 'Mở thiệp mời');
+                    card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } });
                     card.addEventListener('click', function () {
                         hide('3subauj7'); hide('1qpgocgm');
                         show('q1wlsumy'); show('7garfe9k'); show('3udt7eao');
@@ -14047,6 +14046,7 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                 String(t).split('\n').forEach(function (l) { el.appendChild(document.createTextNode(l)); el.appendChild(document.createElement('br')); });
             }
             document.title = C.title;
+            if (C.description) { ['meta-desc', 'og-desc'].forEach(function (i) { var m = $(i); if (m) m.setAttribute('content', C.description); }); }
             var og = document.querySelector('meta[property="og:title"]'); if (og) og.setAttribute('content', C.title);
 
             /* Ảnh: gắn link trong CONFIG.images vào từng vị trí */
@@ -14106,6 +14106,12 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
             var form = document.getElementById('hl53suyf'), btnBox = document.getElementById('w-klql4ysp');
             if (!form || !btnBox) return;
             var btnText = btnBox.querySelector('.button-text'), sending = false, orig = btnText ? btnText.textContent : '';
+            /* chống spam: ô bẫy ẩn cho bot + giãn cách giữa các lần gửi */
+            var trap = document.createElement('input'); trap.type = 'text'; trap.name = 'website'; trap.tabIndex = -1; trap.autocomplete = 'off'; trap.setAttribute('aria-hidden', 'true');
+            trap.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0'; form.appendChild(trap);
+            var COOL = ((T.cooldownSeconds != null ? T.cooldownSeconds : 30) * 1000);
+            function lastSent() { try { return +localStorage.getItem('rsvp_last') || 0; } catch (e) { return 0; } }
+            function markSent() { try { localStorage.setItem('rsvp_last', String(Date.now())); } catch (e) {} }
 
             /* popup cảm ơn */
             var wrap = document.createElement('div'); wrap.id = 'ty-wrap'; wrap.setAttribute('role', 'dialog'); wrap.setAttribute('aria-modal', 'true');
@@ -14166,12 +14172,14 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                 if (!name) { toast('Bạn vui lòng nhập tên nhé!'); form.querySelector('[name="full_name"]').focus(); return; }
                 if (!sel.value) { toast('Bạn vui lòng chọn có tham dự hay không nhé!'); return; }
                 var data = { name: cut(name, 100), relation: cut(form.querySelector('[name="text_input_1"]').value, 100), wish: cut(form.querySelector('[name="text_input_2"]').value, 1000), attend: sel.value };
+                if (trap.value) { form.reset(); showThanks(data.name); return; }
+                if (Date.now() - lastSent() < COOL) { toast('Bạn vừa gửi xong rồi, đợi một chút rồi gửi lại nhé!'); return; }
                 sending = true; if (btnText) btnText.textContent = 'ĐANG GỬI...'; btnBox.style.opacity = '.7';
                 var ok = false;
                 try { await send(data); ok = true; }
                 catch (err) { console.error('[RSVP]', err); toast('Gửi chưa được, bạn thử lại giúp mình nhé!'); }
                 sending = false; if (btnText) btnText.textContent = orig; btnBox.style.opacity = '';
-                if (ok) { form.reset(); showThanks(data.name); }
+                if (ok) { markSent(); form.reset(); showThanks(data.name); }
             }
             btnBox.addEventListener('click', function (e) { e.preventDefault(); handle(); });
             form.addEventListener('submit', function (e) { e.preventDefault(); handle(); });
