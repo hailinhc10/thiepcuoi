@@ -14023,6 +14023,16 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
                         hide('3subauj7'); hide('1qpgocgm');
                         show('q1wlsumy'); show('7garfe9k'); show('3udt7eao');
                         show('dqyi2rbc'); show('oob4nyp3');
+                        /* FIX: go lazy + chay animation ngay khi bam (khong cho luot xuong) */
+                        ['q1wlsumy','7garfe9k','3udt7eao','dqyi2rbc','oob4nyp3'].forEach(function (id) {
+                            var el = g(id); if (!el) return;
+                            el.querySelectorAll('.lazy').forEach(function (n) { n.classList.remove('lazy'); });
+                            if (el.classList.contains('lazy')) el.classList.remove('lazy');
+                            if (el.classList.contains('is-animation')) {
+                                requestAnimationFrame(function () { el.classList.add('animation'); });
+                            }
+                        });
+                        if (typeof handleLazyLoad === 'function') setTimeout(handleLazyLoad, 50);
                     });
                 }
             })();
