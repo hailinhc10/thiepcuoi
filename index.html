@@ -129,22 +129,14 @@ function buildMapping() {
         <meta name="keywords" content="">
         <meta name="description" id="meta-desc" content="Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh &amp; Vũ Mây – 17.01.2027.">
         <script type="text/javascript">
-            !function(e, t, i) {
-                var a, n = e.innerWidth;
-                if (e[i] = (true || n < 768) ? "mobile" : "desktop",
-                "desktop" == e[i])
-                    a = "width=" + 960 + ", user-scalable=no, initial-scale=1.0";
-                else {
-                    var o = 1;
-                    w = 420;
-                    w != n && (o = n / w),
-                    a = "width=" + w + ", initial-scale=" + o + ", viewport-fit=cover"
-                }
-                var l = t.createElement("meta");
-                l.name = "viewport",
-                l.setAttribute("content", a),
-                t.head.appendChild(l)
-            }(window, document, "DISPLAY");
+            /* Thiệp thiết kế rộng 420px. Chỉ đặt width=420: trình duyệt điện thoại tự co/giãn vừa khít màn hình,
+               không phụ thuộc innerWidth (lúc mới load có thể là 980px nên tính scale tay sẽ bị lệch). */
+            (function (d) {
+                window.DISPLAY = "mobile";
+                var m = d.querySelector('meta[name="viewport"]');
+                if (!m) { m = d.createElement("meta"); m.name = "viewport"; d.head.appendChild(m); }
+                m.setAttribute("content", "width=420, viewport-fit=cover");
+            })(document);
         </script>
         <meta property="og:title" content="THƯ MỜI CƯỚI Hải Linh &amp; Vũ Mây ">
         <meta property="og:type" content="website">
@@ -9377,6 +9369,7 @@ function buildMapping() {
 #w-gksl9w4l .text-block-css,#w-j8n1a9zw .text-block-css,#w-ig5jcswu .text-block-css,#w-bv74resi .text-block-css{font-style:normal!important;font-size:15px!important;letter-spacing:.2px}
 #w-3hbjzhq6 .text-block-css{letter-spacing:1px!important}
 </style>
+<style id="fix-viewport">html,body{max-width:100%;overflow-x:hidden}.pageview{overflow-x:hidden}</style>
 </head>
     <body ontouchstart>
         <div class="pageview">
