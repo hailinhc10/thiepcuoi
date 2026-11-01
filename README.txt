@@ -18,3 +18,4 @@ Mở thiệp: mở index.html bằng trình duyệt. Link khách mời: index.ht
 5) Đã xoá file không dùng: css/02-desktop.css, js/11-event-data.js và 19 ảnh (072.jpg, 068/078/065/076/073/079/015/077/052/057/053/054/017/027.png, 028.jpg, 055.webp, 014/019.svg).
    Nếu bạn đang dùng git, nhớ xoá cả các file này trong repo.
 6) Khi đưa lên host chỉ cần: index.html, css/, js/, images/, fonts/ (không cần .git, tai-*.py/ps1, telegram-worker.js, tao-link-khach-moi.html).
+7) Sửa lỗi lúc bấm mở thiệp: các ảnh phong thư (025, 026, 033) trước đây chỉ tải SAU khi bấm nên trên mạng chậm ảnh cưới trượt lên mà chưa có phong thư. Nay tải sẵn trong js/01-config.js.

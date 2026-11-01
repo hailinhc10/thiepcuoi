@@ -9,6 +9,7 @@
                         var k = 0;
                         es.forEach(function (e) {
                             if (e.isIntersecting) {
+                                if (e.target.classList.contains('animation')) { io.unobserve(e.target); return; }
                                 /* so le nhẹ 0.12s giữa các phần tử cùng xuất hiện, tối đa 0.5s */
                                 e.target.style.setProperty('--wc-d', Math.min(k++ * 0.12, 0.5) + 's');
                                 play(e.target); io.unobserve(e.target);

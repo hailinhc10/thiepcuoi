@@ -144,7 +144,13 @@ const SIDES = {
 
 /* Tạo danh sách thay chữ từ CONFIG (không cần sửa) */
 /* Tải trước ảnh bìa để thiệp hiện nhanh hơn */
-(function () { try { var l = document.createElement("link"); l.rel = "preload"; l.as = "image"; l.href = CONFIG.images.cardClosed; document.head.appendChild(l); } catch (e) {} })();
+(function () {
+    /* Tải sẵn ảnh thiệp đóng + các ảnh hiện ra khi bấm mở (phong thư, viền, biểu tượng giữa hai tên, ảnh cưới)
+       để lúc bấm mở không bị trống/giật: trước đây các ảnh này chỉ bắt đầu tải SAU khi bấm. */
+    ["cardClosed", "cardOpenBack", "cardOpenFront", "coverSmallIcon", "envelopePhoto"].forEach(function (k) {
+        try { var l = document.createElement("link"); l.rel = "preload"; l.as = "image"; l.href = CONFIG.images[k]; document.head.appendChild(l); } catch (e) {}
+    });
+})();
 
 function buildMapping() {
   const C = CONFIG, g = C.groomFamily, b = C.brideFamily, c = C.ceremony, p = C.party, v = C.venue;
