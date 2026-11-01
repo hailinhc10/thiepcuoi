@@ -11,7 +11,7 @@ Mở thiệp: mở index.html bằng trình duyệt. Link khách mời: index.ht
    Windows (không cần cài gì):  powershell -ExecutionPolicy Bypass -File .\tai-font.ps1
    Có Python:  py tai-font.py   (tự đổi sang woff2 nếu cài thêm: py -m pip install fonttools brotli)
    Không chạy cũng không sao, thiệp vẫn hiển thị như trước.
-2) Chỉnh tốc độ chuyển động: css/03-mobile.css (animation-duration) - hiện 1s / 1.2s / 1.4s.
+2) Chỉnh tốc độ chuyển động: css/03-mobile.css (animation-duration) - hiện 1.5s / 2s / 3s.
    Độ so le giữa các phần tử: js/20-anim-add-js.js (0.12 giây mỗi phần tử, tối đa 0.5 giây).
 3) Ảnh chính 001-009 đã chuyển sang .webp (js/01-config.js trỏ tới .webp). 003.jpg giữ lại cho og:image/favicon.
 4) JS nhỏ 12..19 đã gộp thành js/12-19-gop.js.
