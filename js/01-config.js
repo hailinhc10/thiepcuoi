@@ -5,7 +5,7 @@
    ===================================================================== */
 const CONFIG = {
   // ======== 1. THÔNG TIN CHUNG ========
-  title: "THƯ MỜI CƯỚI Hải Linh & Vũ Mây",
+  title: "Wedding Invitation - Hải Linh & Vũ Mây",
   description: "Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh & Vũ Mây – 17.01.2027.",   // hiện khi chia sẻ link qua Zalo/Facebook
   groomName: "Hải Linh",                // tên hiện ở trên / bên trái
   brideName: "Vũ Mây",                // tên hiện ở dưới / bên phải
