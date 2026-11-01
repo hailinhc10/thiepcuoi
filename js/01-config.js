@@ -111,8 +111,9 @@ const CONFIG = {
    (kể cả images: { album1: "images/..." }).
    ===================================================================== */
 const SIDES = {
-  trai: {},
+  trai: { familyFirst: "trai" },   // link Nhà Trai: Nhà Trai hiện trước
   gai: {
+    familyFirst: "gai",              // link Nhà Gái: Nhà Gái hiện trước
     title: "THƯ MỜI CƯỚI Vũ Mây & Hải Linh",
     description: "Trân trọng kính mời bạn đến dự lễ cưới của Vũ Mây & Hải Linh – 17.01.2027.",
     groomName: "Vũ Mây",              // bên Nhà Gái: tên cô dâu hiện trước
@@ -147,13 +148,14 @@ const SIDES = {
 
 function buildMapping() {
   const C = CONFIG, g = C.groomFamily, b = C.brideFamily, c = C.ceremony, p = C.party, v = C.venue;
+  /* Bên nào hiện TRƯỚC (khối trên) trong phần "Trân Trọng Báo Tin": CONFIG.familyFirst = "trai" hoặc "gai" */
+  const top = (C.familyFirst === "gai") ? b : g, bottom = (C.familyFirst === "gai") ? g : b;
   return [
     ["wkuu9jg6", C.brideName], ["lfeb0egb", C.groomName], ["19tqxf4g", C.coverDate],
     ["32etj2r3", C.inviteHeading], ["giudke9b", C.brideName], ["6i7xa1kt", C.groomName],
-    /* Khối TRÊN (gksl9w4l, ig5jcswu, 91jxhp0m) = Nhà Trai; khối DƯỚI (j8n1a9zw, bv74resi, 2hyi8ra3) = Nhà Gái.
-       Muốn đổi thứ tự: hoán đổi g <-> b ở hai dòng dưới đây. */
-    ["gksl9w4l", g.label], ["ig5jcswu", g.parents], ["91jxhp0m", g.address],
-    ["j8n1a9zw", b.label], ["bv74resi", b.parents], ["2hyi8ra3", b.address],
+    /* Khối TRÊN = bên được chọn hiện trước, khối DƯỚI = bên còn lại */
+    ["gksl9w4l", top.label], ["ig5jcswu", top.parents], ["91jxhp0m", top.address],
+    ["j8n1a9zw", bottom.label], ["bv74resi", bottom.parents], ["2hyi8ra3", bottom.address],
     ["6amly90s", c.title], ["rvjhix10", c.time], ["0m3cmvaa", c.day], ["k8kl83qy", c.month], ["kbgnz2rp", c.year],
     ["trta43bz", c.lunar], ["pdl931a6", c.place],
     ["3s2jpdyt", p.title], ["yg223oeq", p.time], ["46dkq5lf", p.date], ["ky92athb", p.lunar], ["kc80qrcf", p.place],
