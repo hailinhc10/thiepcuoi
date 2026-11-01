@@ -122,9 +122,9 @@ const SIDES = {
     // ⚠️ SỬA các mục dưới đây cho đúng thông tin bên Nhà Gái (đang là giá trị tạm)
     ceremony: { place: "Tại Tư Gia Nhà Gái" },
     party:    { place: "Tại Tư Gia Nhà Gái" },
-    venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội"
+    venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội",
       mapLink: "https://maps.app.goo.gl/eCtHYJdSBSeZLptA8",   // nút "Xem Chỉ Đường"
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d937.8591061864248!2d105.81154699746818!3d20.863428684513767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1793498067064!5m2!1sen!2s" },   // link nhúng bản đồ (Google Maps > Chia sẻ > Nhúng bản đồ > lấy phần src)
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d937.8591061864248!2d105.81154699746818!3d20.863428684513767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1793498067064!5m2!1sen!2s"   // link nhúng bản đồ
     },
   }
 };
