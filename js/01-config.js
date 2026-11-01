@@ -18,8 +18,8 @@ const CONFIG = {
   brideFamily: { label: "Nhà Gái", parents: "ÔNG Vũ Bá Kiền\nBÀ Dương Thị Thành", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội" },
 
   // ======== 3. LỄ VÀ TIỆC ========
-  ceremony: { title: "LỄ VU QUY", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Tại Tư Gia Nhà Trai" },
-  party:    { title: "TIỆC MỪNG VU QUY", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Tại Tư Gia Nhà Trai" },
+  ceremony: { title: "LỄ VU QUY", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Nhà Văn Hóa Tuyết Nghĩa, Kiều Phú, Hà Nội" },
+  party:    { title: "TIỆC MỪNG VU QUY", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Nhà Văn Hóa Tuyết Nghĩa, Kiều Phú, Hà Nội" },
 
   // ======== 4. ĐỊA ĐIỂM & BẢN ĐỒ ========
   venue: { name: "TƯ GIA NHÀ TRAI", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội",
