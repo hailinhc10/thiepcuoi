@@ -44,6 +44,7 @@
                     '\uD83E\uDD1D Quan hệ: ' + (d.relation || '(không điền)'),
                     (d.attend.indexOf('Không') === 0 ? '\u274C' : '\u2705') + ' Tham dự: ' + d.attend,
                     '\uD83D\uDCAC Lời chúc: ' + (d.wish || '(không điền)'),
+                    '\uD83C\uDFE0 Thiệp: ' + (C.side === 'gai' ? 'Nhà Gái' : 'Nhà Trai'),
                     guestLink ? '\uD83D\uDD17 Link mời: ' + guestLink : '',
                     '\uD83D\uDD52 ' + new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })
                 ].filter(Boolean).join('\n');

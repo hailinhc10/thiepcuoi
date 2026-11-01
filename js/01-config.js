@@ -5,7 +5,7 @@
    ===================================================================== */
 const CONFIG = {
   // ======== 1. THÔNG TIN CHUNG ========
-  title: "Wedding Invitation - Hải Linh & Vũ Mây",
+  title: "THƯ MỜI CƯỚI Hải Linh & Vũ Mây",
   description: "Trân trọng kính mời bạn đến dự lễ cưới của Hải Linh & Vũ Mây – 17.01.2027.",   // hiện khi chia sẻ link qua Zalo/Facebook
   groomName: "Hải Linh",                // tên hiện ở trên / bên trái
   brideName: "Vũ Mây",                // tên hiện ở dưới / bên phải
@@ -97,9 +97,49 @@ const CONFIG = {
     // ---- POPUP GỬI MỪNG CƯỚI
     qrGroom: "images/007.jpg",               // 👉 Mã QR nhà trai
     qrBride: "images/007.jpg",               // 👉 Mã QR nhà gái
-    popupBackground: "images/028.jpg",       // Ảnh nền popup mặc định
+    popupBackground: "",       // Ảnh nền popup mặc định
   }
 };
+
+/* =====================================================================
+   CHIA THIỆP NHÀ TRAI / NHÀ GÁI (dùng chung 1 source, khác nhau ở link)
+   - Nhà Trai : index.html                (hoặc ?side=trai)  -> dùng đúng CONFIG ở trên
+   - Nhà Gái  : index.html?side=gai
+   - Kèm tên khách: index.html?side=gai&guest=Anh%20Nam
+   Chỉ cần ghi vào SIDES những mục KHÁC với CONFIG ở trên; mục nào không ghi
+   thì tự dùng lại giá trị của CONFIG. Có thể ghi đè bất kỳ mục nào
+   (kể cả images: { album1: "images/..." }).
+   ===================================================================== */
+const SIDES = {
+  trai: {},
+  gai: {
+    title: "THƯ MỜI CƯỚI Vũ Mây & Hải Linh",
+    description: "Trân trọng kính mời bạn đến dự lễ cưới của Vũ Mây & Hải Linh – 17.01.2027.",
+    groomName: "Vũ Mây",              // bên Nhà Gái: tên cô dâu hiện trước
+    brideName: "Hải Linh",
+    footer: { names: "VŨ MÂY & HẢI LINH" },
+
+    // ⚠️ SỬA các mục dưới đây cho đúng thông tin bên Nhà Gái (đang là giá trị tạm)
+    ceremony: { place: "Tại Tư Gia Nhà Gái" },
+    party:    { place: "Tại Tư Gia Nhà Gái" },
+    venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội"
+      // mapLink: "...",   // ⚠️ dán link bản đồ nhà gái (nếu không ghi sẽ dùng bản đồ nhà trai)
+      // mapEmbed: "...",  // ⚠️ dán link nhúng bản đồ nhà gái
+    },
+  }
+};
+(function () {
+  function merge(t, s) {
+    Object.keys(s).forEach(function (k) {
+      if (s[k] && typeof s[k] === "object" && !Array.isArray(s[k]) && t[k] && typeof t[k] === "object") merge(t[k], s[k]);
+      else t[k] = s[k];
+    });
+  }
+  var q = (new URLSearchParams(location.search).get("side") || "").toLowerCase();
+  var side = (q === "gai" || q === "nhagai" || q === "bride") ? "gai" : "trai";
+  CONFIG.side = side;
+  merge(CONFIG, SIDES[side] || {});
+})();
 
 /* Tạo danh sách thay chữ từ CONFIG (không cần sửa) */
 /* Tải trước ảnh bìa để thiệp hiện nhanh hơn */

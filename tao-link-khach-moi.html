@@ -13,6 +13,8 @@ td.n{white-space:nowrap;font-weight:600;padding-right:10px}
 <h1>Tạo link thiệp mời theo từng khách</h1>
 <label>Link thiệp (dán link website của bạn, ví dụ https://ten-mien.com/)</label>
 <input id="base" placeholder="https://...">
+<label>Thiệp của bên nào</label>
+<select id="side" style="padding:10px;border:1px solid #bbb;border-radius:8px;font:inherit"><option value="trai">Nhà Trai</option><option value="gai">Nhà Gái</option></select>
 <label>Danh sách khách mời (mỗi dòng một tên, ví dụ: Anh Nam, Chị Hoa, Gia đình bác Tuấn)</label>
 <textarea id="names"></textarea>
 <button onclick="gen()">Tạo link</button>
@@ -24,7 +26,8 @@ var rows=[];
 function gen(){
   var b=document.getElementById('base').value.trim().replace(/[?#].*$/,'');
   var ns=document.getElementById('names').value.split(/\r?\n/).map(function(x){return x.trim()}).filter(Boolean);
-  rows=ns.map(function(n){return [n,b+'?guest='+encodeURIComponent(n)]});
+  var sd=document.getElementById('side').value;
+  rows=ns.map(function(n){return [n,b+'?side='+sd+'&guest='+encodeURIComponent(n)]});
   var t=document.getElementById('out');t.innerHTML='';
   rows.forEach(function(r){
     var tr=t.insertRow();
