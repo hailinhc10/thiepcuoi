@@ -18,11 +18,11 @@ const CONFIG = {
   brideFamily: { label: "Nhà Gái", parents: "ÔNG Vũ Bá Kiền\nBÀ Dương Thị Thành", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội" },
 
   // ======== 3. LỄ VÀ TIỆC ========
-  ceremony: { title: "LỄ VU QUY", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Nhà Văn Hóa Tuyết Nghĩa, Kiều Phú, Hà Nội" },
-  party:    { title: "TIỆC MỪNG VU QUY", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Nhà Văn Hóa Tuyết Nghĩa, Kiều Phú, Hà Nội" },
+  ceremony: { title: "LỄ VU QUY", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Tại Tư Gia Nhà Trai" },
+  party:    { title: "TIỆC MỪNG VU QUY", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Tại Tư Gia Nhà Trai" },
 
   // ======== 4. ĐỊA ĐIỂM & BẢN ĐỒ ========
-  venue: { name: "Nhà Văn Hóa Tuyết Nghĩa", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội",
+  venue: { name: "TƯ GIA NHÀ TRAI", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội",
     mapLink: "https://maps.app.goo.gl/wM95yKbDq3DMMPAN7",   // nút "Xem Chỉ Đường"
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.918577173373!2d105.58426237587143!3d20.974900489625238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345b001b4410f1%3A0xa1734c5aa328db5f!2zTmjDoCB2xINuIGjDs2EgdGjDtG4gxJDhuqFpIMSQ4buTbmcgxJDhu5kgTMOibg!5e1!3m2!1svi!2s!4v1793337329034!5m2!1svi!2s" },   // link nhúng bản đồ (Google Maps > Chia sẻ > Nhúng bản đồ > lấy phần src)
 
@@ -31,7 +31,7 @@ const CONFIG = {
     heart: "images/016.png" },
 
   // ======== 6. GỬI MỪNG CƯỚI ========
-  bank: { groom: "TECHCOMBANK - CAN HAI LINH\n500 11 99999", bride: "TECHCOMBANK - VU THI MAY\n500 11 99999" },
+  bank: { groom: "TECHCOMBANK - CAN HAI LINH\n500 11 99999", bride: "TECHCOMBANK - VU THI MAY\n1903 1314 7385 55" },
 
   // ======== 7. CHÂN TRANG ========
   footer: { quote: "Sự hiện diện của Quý khách là niềm vinh hạnh cho gia đình chúng tôi!", names: "HẢI LINH & VŨ MÂY" },
