@@ -1,7 +1,7 @@
 /* ===== POPUP GUI MUNG CUOI ===== */
 .popup-backdrop{z-index:1000000!important;background:rgba(0,0,0,.72)!important}
 #w-g81yux0n,#w-hqvc3ddh{z-index:1000001!important}
-#w-g81yux0n.wc-open,#w-hqvc3ddh.wc-open{display:block!important;animation:wcPop .3s ease-out both}
+#w-g81yux0n.wc-open,#w-hqvc3ddh.wc-open{display:block!important;animation:wcPop .12s ease-out both}
 #w-g81yux0n .popup-background,#w-hqvc3ddh .popup-background{background:#fff!important;border-radius:14px}
 /* anh QR: hien du, khong con bi cat/lech nhu khung anh cu */
 #w-p8etkpq1 .image-block-css,#w-olx95uxv .image-block-css{background:#fff;overflow:hidden;border-radius:6px}
@@ -20,3 +20,11 @@
 .wc-toast{position:fixed;left:50%;bottom:8%;transform:translateX(-50%) translateY(10px);z-index:1000003;background:rgba(0,0,0,.82);color:#fff;
   font:500 14px/1.3 'Be Vietnam Pro',Barlow,Roboto,Arial,sans-serif;padding:9px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:90vw;text-align:center}
 .wc-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---- toi uu toc do cham / mo popup ---- */
+html,body,button,.com-popup,.popup-backdrop{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* noi dung popup hien ngay, khong cho animate.css (tai tu internet) */
+#w-g81yux0n .is-animation,#w-hqvc3ddh .is-animation{opacity:1!important}
+#w-g81yux0n .is-animation *,#w-hqvc3ddh .is-animation *{animation:none!important}
+/* khi popup dang mo: tam dung cac hieu ung lap lai o trang phia sau cho may khoi giat */
+body.wc-modal-open .pageview *{animation-play-state:paused!important}

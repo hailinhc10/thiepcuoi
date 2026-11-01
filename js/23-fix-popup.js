@@ -14,16 +14,18 @@
     /* class lazy khong bao gio duoc go trong popup an -> nen & anh QR bi mat. Go di. */
     [P.groom, P.bride].forEach(function (p) { p.querySelectorAll('.lazy').forEach(function (n) { n.classList.remove('lazy'); }); });
 
-    /* anh QR: gan lai tu CONFIG + bao loi neu link anh khong tai duoc */
-    [['w-p8etkpq1', IMG.qrGroom], ['w-olx95uxv', IMG.qrBride]].forEach(function (a) {
+    /* anh QR: chi tai + giai ma san anh cua dung ben (link nay), bao loi neu link anh khong tai duoc */
+    var QR_SLOTS = (CFG.side === 'gai') ? [['w-olx95uxv', IMG.qrBride]] : [['w-p8etkpq1', IMG.qrGroom]];
+    QR_SLOTS.forEach(function (a) {
       var box = $(a[0]); if (!box || !a[1]) return;
       var bg = box.querySelector('.image-background'); if (bg) bg.style.backgroundImage = 'url("' + a[1] + '")';
-      var probe = new Image();
+      var probe = new Image(); probe.decoding = 'async';
       probe.onerror = function () {
         var m = document.createElement('div'); m.className = 'wc-qr-fail';
         m.textContent = 'Không tải được mã QR. Bạn vui lòng chuyển khoản theo số tài khoản bên dưới nhé!';
         box.querySelector('.image-block-css').appendChild(m);
       };
+      probe.onload = function () { if (probe.decode) probe.decode().catch(function () {}); };
       probe.src = a[1];
     });
 
@@ -35,14 +37,15 @@
     var ICON_COPY = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>';
     var ICON_OK = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
     function copyText(t) {
-      if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
-      return new Promise(function (res, rej) {
-        try {
-          var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', '');
-          ta.style.cssText = 'position:fixed;top:-1000px;opacity:0'; document.body.appendChild(ta); ta.select();
-          var ok = document.execCommand('copy'); document.body.removeChild(ta); ok ? res() : rej();
-        } catch (e) { rej(e); }
-      });
+      try {
+        var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', '');
+        ta.style.cssText = 'position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;font-size:16px';
+        document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, t.length);
+        var ok = document.execCommand('copy'); document.body.removeChild(ta);
+        if (ok) return Promise.resolve();
+      } catch (e) {}
+      if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t);
+      return Promise.reject();
     }
     var toast = document.createElement('div'); toast.className = 'wc-toast'; document.body.appendChild(toast);
     var toastTimer;
@@ -61,10 +64,13 @@
       b.title = 'Sao chép số tài khoản'; b.setAttribute('aria-label', 'Sao chép số tài khoản'); b.innerHTML = ICON_COPY;
       b.addEventListener('click', function (e) {
         e.preventDefault(); e.stopPropagation();
-        copyText(digits).then(function () {
-          b.innerHTML = ICON_OK; b.classList.add('done'); showToast('Đã sao chép số tài khoản');
-          setTimeout(function () { b.innerHTML = ICON_COPY; b.classList.remove('done'); }, 1800);
-        }, function () { showToast('Không sao chép được, bạn hãy giữ vào số để chép nhé'); });
+        /* phản hồi ngay lập tức (không chờ clipboard) */
+        b.innerHTML = ICON_OK; b.classList.add('done'); showToast('Đã sao chép số tài khoản');
+        clearTimeout(b._t); b._t = setTimeout(function () { b.innerHTML = ICON_COPY; b.classList.remove('done'); }, 1800);
+        copyText(digits).catch(function () {
+          b.innerHTML = ICON_COPY; b.classList.remove('done');
+          showToast('Không sao chép được, bạn hãy giữ vào số để chép nhé');
+        });
       });
       wrap.appendChild(b);
     }
@@ -72,11 +78,10 @@
 
     function show(k) {
       Object.keys(P).forEach(function (key) { P[key].classList.toggle('wc-open', key === k); P[key].classList.toggle('d-none', key !== k); });
-      P[k].querySelectorAll('.is-animation').forEach(function (n) { n.classList.add('animation'); });
     }
-    function open() { backdrop.classList.remove('d-none'); show(SIDE_KEY); }
+    function open() { document.body.classList.add('wc-modal-open'); backdrop.classList.remove('d-none'); show(SIDE_KEY); }
     function close() {
-      backdrop.classList.add('d-none');
+      backdrop.classList.add('d-none'); document.body.classList.remove('wc-modal-open');
       Object.keys(P).forEach(function (key) { P[key].classList.remove('wc-open'); P[key].classList.add('d-none'); });
     }
     btn.style.cursor = 'pointer';
