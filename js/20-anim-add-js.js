@@ -6,8 +6,13 @@
                 if (!('IntersectionObserver' in window)) { els.forEach(play); }
                 else {
                     var io = new IntersectionObserver(function (es) {
+                        var k = 0;
                         es.forEach(function (e) {
-                            if (e.isIntersecting) { play(e.target); io.unobserve(e.target); }
+                            if (e.isIntersecting) {
+                                /* so le nhẹ 0.12s giữa các phần tử cùng xuất hiện, tối đa 0.5s */
+                                e.target.style.setProperty('--wc-d', Math.min(k++ * 0.12, 0.5) + 's');
+                                play(e.target); io.unobserve(e.target);
+                            }
                         });
                     }, { threshold: 0.1 });
                     els.forEach(function (el) { io.observe(el); });

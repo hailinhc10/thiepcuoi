@@ -10,8 +10,10 @@ var done=false,gfDone=false,loaded=false;
 function go(){if(done)return;done=true;d.classList.remove('wc-fonts-wait')}
 setTimeout(go,2000);
 function tryGo(){if(!(gfDone&&loaded))return;
- var F=['600 40px "Cormorant Garamond"','400 16px "Be Vietnam Pro"','700 16px "Barlow Condensed"','40px "Ephesis-Regular.ttf"','35px "VNF-Shelia-Regular (1).ttf"'];
- Promise.all(F.map(function(f){return document.fonts.load(f).catch(function(){})})).then(go,go)}
+ var T='Hải Linh Vũ Mây ắằẳẵặ ếềểễệ ốồổỗộ ớờởỡợ ứừửữự ĐđỲỹ';
+ var F=[['600 40px "Cormorant Garamond"',T],['italic 600 40px "Cormorant Garamond"',T],['400 16px "Be Vietnam Pro"',T],['600 16px "Be Vietnam Pro"',T],['italic 600 16px "Be Vietnam Pro"',T],['700 16px "Barlow Condensed"',T],['italic 700 16px "Barlow Condensed"',T],['400 16px "Barlow"',T],['700 16px "Barlow"',T],['400 16px "EB Garamond"',T],
+ ['40px "Ephesis-Regular.ttf"',T],['35px "VNF-Shelia-Regular (1).ttf"',T],['40px "PinyonScript-Regular.ttf"',T],['40px "BlackMango-Medium.otf"',T],['40px "SVN-Amstirdam.otf"',T],['40px "UTM-Azkia.ttf"',T],['40px "AlexBrush-Regular.ttf"',T]];
+ Promise.all(F.map(function(f){return document.fonts.load(f[0],f[1]).catch(function(){})})).then(go,go)}
 window.__gf=function(){gfDone=true;tryGo()};
 window.addEventListener('load',function(){loaded=true;tryGo()});
 })();
@@ -44,8 +46,8 @@ window.addEventListener('load',function(){loaded=true;tryGo()});
 <link rel="stylesheet" href="css/14-desktop.css" media="screen and (min-width: 768px)">
         <script src="js/03-script.js"></script>
         <script src="js/04-script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Cormorant+Garamond:wght@500;600;700&display=swap" media="print" onload="this.media='all';window.__gf&&window.__gf()" onerror="window.__gf&&window.__gf()">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Cormorant+Garamond:wght@500;600;700&display=swap"></noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Barlow:wght@400;700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=EB+Garamond:wght@400;600&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all';window.__gf&&window.__gf()" onerror="window.__gf&&window.__gf()">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Barlow:wght@400;700&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=EB+Garamond:wght@400;600&family=Roboto:wght@400;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/13-animations.css">
 <link rel="stylesheet" href="css/04-font-fix.css">
 <link rel="stylesheet" href="css/05-fix-viewport.css">
@@ -930,16 +932,8 @@ https://maps.app.goo.gl/6aWRnoXGXpWnYq9b6
         </div>
         <script src="js/09-script.js"></script>
         <script src="js/10-lazy.js"></script>
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Barlow:100,300,400,700,900|EB%20Garamond:100,300,400,700,900|Arial:100,300,400,700,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';">
         <link rel="stylesheet" href="css/08-style.css">
-        <script src="js/12-script.js"></script>
-        <script src="js/13-script.js"></script>
-        <script src="js/14-script.js"></script>
-        <script src="js/15-service-worker.js"></script>
-        <script src="js/16-script.js"></script>
-        <script src="js/17-script.js"></script>
-        <script src="js/18-script.js"></script>
-        <script src="js/19-script.js"></script>
+        <script src="js/12-19-gop.js"></script>
     
         <!-- ===== ANIMATION (thêm mới) ===== -->
         <link rel="stylesheet" href="css/09-anim-add.css">

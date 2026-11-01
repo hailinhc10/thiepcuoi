@@ -4,13 +4,7 @@
                 font-display: swap;
             }
 
-            @font-face {
-                font-family: "UTM-Cafeta.ttf";
-                src: url("https://statics.pancake.vn/web-media/04/eb/01/7a/e19221a44fabb6fd54c6339fd43b1c25ebbe20e97f6633beed4cbc79-w:0-h:0-l:31526-t:application/octet-stream.ttf") format("truetype");
-                font-display: swap;
-            }
-
-            @font-face {
+@font-face {
                 font-family: "Ephesis-Regular.ttf";
                 src: url("https://statics.pancake.vn/web-media/65/48/68/4f/ca5a0c732f276b6fef504eddf0e2d6cdf65cf198b0440dde6d90c5a8-w:0-h:0-l:141771-t:application/octet-stream.ttf") format("truetype");
                 font-display: swap;

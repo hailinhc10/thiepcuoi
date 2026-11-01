@@ -62,36 +62,36 @@ const CONFIG = {
 
     // ---- THIỆP MỞ RA (sau khi bấm)
     cardOpenBack: "images/025.png",          // Thiệp mở - lớp sau
-    envelopePhoto: "images/003.jpg",         // 👉 Ảnh cưới trượt lên trong phong thư
+    envelopePhoto: "images/003.webp",         // 👉 Ảnh cưới trượt lên trong phong thư
     cardOpenFront: "images/026.png",         // Thiệp mở - lớp trước (viền phong thư)
     coverSmallIcon: "images/033.png",        // Biểu tượng nhỏ giữa hai tên
 
     // ---- PHẦN THƯ MỜI CƯỚI
     inviteIcon: "images/032.png",            // Biểu tượng trên dải đỏ
     inviteRing: "images/037.png",            // Vòng treo trên dải đỏ
-    mainPhoto: "images/003.jpg",             // 👉 Ảnh lớn có viền đỏ
-    trioLeft: "images/002.jpg",              // 👉 Trân Trọng Kính Mời - ảnh trái
-    trioMiddle: "images/003.jpg",            // 👉 Trân Trọng Kính Mời - ảnh giữa
-    trioRight: "images/005.jpg",             // 👉 Trân Trọng Kính Mời - ảnh phải
+    mainPhoto: "images/003.webp",             // 👉 Ảnh lớn có viền đỏ
+    trioLeft: "images/002.webp",              // 👉 Trân Trọng Kính Mời - ảnh trái
+    trioMiddle: "images/003.webp",            // 👉 Trân Trọng Kính Mời - ảnh giữa
+    trioRight: "images/005.webp",             // 👉 Trân Trọng Kính Mời - ảnh phải
 
     // ---- ĐỊA ĐIỂM
     mapIcon: "images/050.png",               // Biểu tượng cạnh "Địa Điểm Tổ Chức"
 
     // ---- ALBUM HÌNH CƯỚI (theo thứ tự từ trên xuống)
-    album1: "images/006.jpg",                // 👉 Hàng 1 - trái
-    album2: "images/005.jpg",                // 👉 Hàng 1 - phải
-    album3: "images/004.jpg",                // 👉 Hàng 2 - trái
-    album4: "images/002.jpg",                // 👉 2 - giữa
-    album5: "images/004.jpg",                // 👉 2 - phải
-    album6: "images/001.jpg",                // 👉 Hàng 3 - trái
-    album7: "images/004.jpg",                // 👉 3 - phải
-    album8: "images/008.jpg",                // 👉 Hàng 4 - trái
-    album9: "images/006.jpg",                // 👉 Hàng 4 - phải
-    album10: "images/009.jpg",               // 👉 Hàng 5 - trái
-    album11: "images/009.jpg",               // 👉 Hàng 5 - phải
+    album1: "images/006.webp",                // 👉 Hàng 1 - trái
+    album2: "images/005.webp",                // 👉 Hàng 1 - phải
+    album3: "images/004.webp",                // 👉 Hàng 2 - trái
+    album4: "images/002.webp",                // 👉 2 - giữa
+    album5: "images/004.webp",                // 👉 2 - phải
+    album6: "images/001.webp",                // 👉 Hàng 3 - trái
+    album7: "images/004.webp",                // 👉 3 - phải
+    album8: "images/008.webp",                // 👉 Hàng 4 - trái
+    album9: "images/006.webp",                // 👉 Hàng 4 - phải
+    album10: "images/009.webp",               // 👉 Hàng 5 - trái
+    album11: "images/009.webp",               // 👉 Hàng 5 - phải
 
     // ---- LỜI CHÀO CUỐI
-    closingBackground: "images/008.jpg",     // 👉 Ảnh nền cuối trang
+    closingBackground: "images/008.webp",     // 👉 Ảnh nền cuối trang
     closingFlower: "images/046.png",         // Họa tiết hoa (dùng chung ở cuối trang và popup)
 
     // ---- POPUP GỬI MỪNG CƯỚI

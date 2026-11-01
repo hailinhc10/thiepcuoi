@@ -3011,12 +3011,12 @@
             #w-j6ac06mu.animation .text-block-css {
                 animation-name: fadeInDown;
                 -webkit-animation-name: fadeInDown;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-3subauj7.animation {
@@ -3041,12 +3041,12 @@
             #w-bnrugie4.animation .text-block-css {
                 animation-name: fadeInDown;
                 -webkit-animation-name: fadeInDown;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-1qpgocgm.animation {
@@ -3056,12 +3056,12 @@
             #w-1qpgocgm.animation .image-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-7garfe9k.animation {
@@ -3071,12 +3071,12 @@
             #w-7garfe9k.animation .image-block-css {
                 animation-name: slideInUp;
                 -webkit-animation-name: slideInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 4s;
-                -webkit-animation-duration: 4s;
+                animation-duration: 1.4s;
+                -webkit-animation-duration: 1.4s;
             }
 
             #w-ohkl2lnj.animation {
@@ -3086,12 +3086,12 @@
             #w-ohkl2lnj.animation .image-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-lfeb0egb.animation {
@@ -3101,12 +3101,12 @@
             #w-lfeb0egb.animation .text-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-19tqxf4g.animation {
@@ -3116,12 +3116,12 @@
             #w-19tqxf4g.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-wkuu9jg6.animation {
@@ -3131,12 +3131,12 @@
             #w-wkuu9jg6.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-0awe136v.animation {
@@ -3146,12 +3146,12 @@
             #w-0awe136v.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-g1j22eiv.animation {
@@ -3161,12 +3161,12 @@
             #w-g1j22eiv.animation .line-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 4s;
-                -webkit-animation-duration: 4s;
+                animation-duration: 1.4s;
+                -webkit-animation-duration: 1.4s;
             }
 
             #w-sods5ita.animation {
@@ -3176,12 +3176,12 @@
             #w-sods5ita.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-3hbjzhq6.animation {
@@ -3191,12 +3191,12 @@
             #w-3hbjzhq6.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-gksl9w4l.animation {
@@ -3206,12 +3206,12 @@
             #w-gksl9w4l.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-91jxhp0m.animation {
@@ -3221,12 +3221,12 @@
             #w-91jxhp0m.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-ig5jcswu.animation {
@@ -3236,12 +3236,12 @@
             #w-ig5jcswu.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-j8n1a9zw.animation {
@@ -3251,12 +3251,12 @@
             #w-j8n1a9zw.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-2hyi8ra3.animation {
@@ -3266,12 +3266,12 @@
             #w-2hyi8ra3.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-bv74resi.animation {
@@ -3281,12 +3281,12 @@
             #w-bv74resi.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-32etj2r3.animation {
@@ -3296,12 +3296,12 @@
             #w-32etj2r3.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-6i7xa1kt.animation {
@@ -3311,12 +3311,12 @@
             #w-6i7xa1kt.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 4s;
-                -webkit-animation-duration: 4s;
+                animation-duration: 1.4s;
+                -webkit-animation-duration: 1.4s;
             }
 
             #w-giudke9b.animation {
@@ -3326,12 +3326,12 @@
             #w-giudke9b.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 4s;
-                -webkit-animation-duration: 4s;
+                animation-duration: 1.4s;
+                -webkit-animation-duration: 1.4s;
             }
 
             #w-ioujowzg.animation {
@@ -3341,12 +3341,12 @@
             #w-ioujowzg.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 4s;
-                -webkit-animation-duration: 4s;
+                animation-duration: 1.4s;
+                -webkit-animation-duration: 1.4s;
             }
 
             #w-1u5rhi6o.animation {
@@ -3356,12 +3356,12 @@
             #w-1u5rhi6o.animation .image-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-4ccowrr5.animation {
@@ -3371,12 +3371,12 @@
             #w-4ccowrr5.animation .image-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-amfdze1w.animation {
@@ -3386,12 +3386,12 @@
             #w-amfdze1w.animation .text-block-css {
                 animation-name: fadeInDown;
                 -webkit-animation-name: fadeInDown;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-oaf388po.animation {
@@ -3401,12 +3401,12 @@
             #w-oaf388po.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-ilyy52iz.animation {
@@ -3416,12 +3416,12 @@
             #w-ilyy52iz.animation .image-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-cs7r30qb.animation {
@@ -3431,12 +3431,12 @@
             #w-cs7r30qb.animation .image-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-trta43bz.animation {
@@ -3446,12 +3446,12 @@
             #w-trta43bz.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-pdl931a6.animation {
@@ -3461,12 +3461,12 @@
             #w-pdl931a6.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-k8kl83qy.animation {
@@ -3476,12 +3476,12 @@
             #w-k8kl83qy.animation .text-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-kbgnz2rp.animation {
@@ -3491,12 +3491,12 @@
             #w-kbgnz2rp.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-s2av0vl0.animation {
@@ -3506,12 +3506,12 @@
             #w-s2av0vl0.animation .line-css {
                 animation-name: fadeIn;
                 -webkit-animation-name: fadeIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-bifzmam8.animation {
@@ -3521,12 +3521,12 @@
             #w-bifzmam8.animation .line-css {
                 animation-name: fadeIn;
                 -webkit-animation-name: fadeIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-6amly90s.animation {
@@ -3536,12 +3536,12 @@
             #w-6amly90s.animation .text-block-css {
                 animation-name: fadeInDown;
                 -webkit-animation-name: fadeInDown;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-rvjhix10.animation {
@@ -3551,12 +3551,12 @@
             #w-rvjhix10.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-0m3cmvaa.animation {
@@ -3566,12 +3566,12 @@
             #w-0m3cmvaa.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-3s2jpdyt.animation {
@@ -3581,12 +3581,12 @@
             #w-3s2jpdyt.animation .text-block-css {
                 animation-name: fadeIn;
                 -webkit-animation-name: fadeIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-46dkq5lf.animation {
@@ -3596,12 +3596,12 @@
             #w-46dkq5lf.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-yg223oeq.animation {
@@ -3611,12 +3611,12 @@
             #w-yg223oeq.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-ky92athb.animation {
@@ -3626,12 +3626,12 @@
             #w-ky92athb.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-kc80qrcf.animation {
@@ -3641,12 +3641,12 @@
             #w-kc80qrcf.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-b8ao84la.animation {
@@ -3656,12 +3656,12 @@
             #w-b8ao84la.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-8799m2jd.animation {
@@ -3671,12 +3671,12 @@
             #w-8799m2jd.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-i7ym6cbi.animation {
@@ -3686,12 +3686,12 @@
             #w-i7ym6cbi.animation .button-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-q59jdd9d.animation {
@@ -3701,12 +3701,12 @@
             #w-q59jdd9d.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-451pwh6w.animation {
@@ -3716,12 +3716,12 @@
             #w-451pwh6w.animation .text-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-hxsmv8a3.animation {
@@ -3731,12 +3731,12 @@
             #w-hxsmv8a3.animation .text-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-7m08afme.animation {
@@ -3746,12 +3746,12 @@
             #w-7m08afme.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-gfr8kgrk.animation {
@@ -3761,12 +3761,12 @@
             #w-gfr8kgrk.animation .image-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-ytqzomid.animation {
@@ -3776,12 +3776,12 @@
             #w-ytqzomid.animation .text-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 2s;
-                -webkit-animation-duration: 2s;
+                animation-duration: 1s;
+                -webkit-animation-duration: 1s;
             }
 
             #w-je4g36sy.animation {
@@ -3791,12 +3791,12 @@
             #w-je4g36sy.animation .image-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-hsmpqzdg.animation {
@@ -3806,12 +3806,12 @@
             #w-hsmpqzdg.animation .image-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-izpls7dm.animation {
@@ -3821,12 +3821,12 @@
             #w-izpls7dm.animation .image-block-css {
                 animation-name: zoomIn;
                 -webkit-animation-name: zoomIn;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-qg9pg53z.animation {
@@ -3836,12 +3836,12 @@
             #w-qg9pg53z.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-3i6z5fev.animation {
@@ -3851,12 +3851,12 @@
             #w-3i6z5fev.animation .image-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-z6mhywwk.animation {
@@ -3866,12 +3866,12 @@
             #w-z6mhywwk.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-0g7le2fx.animation {
@@ -3881,12 +3881,12 @@
             #w-0g7le2fx.animation .image-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-v1luuevp.animation {
@@ -3896,12 +3896,12 @@
             #w-v1luuevp.animation .image-block-css {
                 animation-name: fadeInLeft;
                 -webkit-animation-name: fadeInLeft;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-lf73c5qo.animation {
@@ -3911,12 +3911,12 @@
             #w-lf73c5qo.animation .image-block-css {
                 animation-name: fadeInRight;
                 -webkit-animation-name: fadeInRight;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-iylwpged.animation {
@@ -3941,12 +3941,12 @@
             #w-ihlyqwez.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
 
             #w-yuinkxlf.animation {
@@ -3971,11 +3971,11 @@
             #w-jg46voic.animation .text-block-css {
                 animation-name: fadeInUp;
                 -webkit-animation-name: fadeInUp;
-                animation-delay: 0s;
-                -webkit-animation-delay: 0s;
-                animation-iteration-count: 1;
+                animation-delay: var(--wc-d, 0s);
+                -webkit-animation-delay: var(--wc-d, 0s);
+                animation-iteration-count: 1; animation-fill-mode: backwards; animation-timing-function: cubic-bezier(.22,.61,.36,1);
                 -webkit-animation-iteration-count: 1;
-                animation-duration: 3s;
-                -webkit-animation-duration: 3s;
+                animation-duration: 1.2s;
+                -webkit-animation-duration: 1.2s;
             }
         
