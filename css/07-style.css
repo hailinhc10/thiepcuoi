@@ -1,0 +1,98 @@
+                                    /* 👉 Thêm Google Fonts giống các code trước */
+                                    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Open+Sans:wght@400;700&display=swap'); .wc-cal-outer {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        padding: 0;
+                                    }
+
+                                    /* 👉 Tiêu đề dùng Kaisei Decol cho đồng bộ */
+                                    .wc-cal-title {
+                                        font-family: "Kaisei Decol", serif;
+                                        font-size: 22px;
+                                        text-align: center;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .wc-cal {
+                                        width: 100%;
+                                        max-width: 340px;
+                                    }
+
+                                    .wc-cal-frame {
+                                        border: 1px solid #c00000;
+                                        padding: 14px 16px;
+                                        box-sizing: border-box;
+                                    }
+
+                                    .wc-cal-grid {
+                                        display: grid;
+                                        grid-template-columns: repeat(7, 1fr);
+                                        gap: 10px;
+                                    }
+
+                                    .wc-cal-grid > div {
+                                        min-height: 32px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        position: relative;
+                                    }
+
+                                    /* 👉 Hàng thứ dùng Open Sans (giống các code trước) */
+                                    .wc-cal-dow {
+                                        font-family: "Open Sans", sans-serif;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                    }
+
+                                    /* 👉 Ô ngày cũng dùng Open Sans */
+                                    .wc-cal-day {
+                                        font-family: "Open Sans", sans-serif;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        position: relative;
+                                    }
+
+                                    .wc-cal-day-span {
+                                        position: relative;
+                                        z-index: 2;
+                                    }
+
+                                    .wc-cal-day--sun .wc-cal-day-span {
+                                        font-weight: 700;
+                                    }
+
+                                    .wc-cal-day--selected .wc-cal-day-span {
+                                        font-weight: 700;
+                                    }
+
+                                    .wc-cal-empty {
+                                        opacity: 0;
+                                    }
+
+                                    .wc-cal-heart {
+                                        position: absolute;
+                                        width: 40px;
+                                        height: 40px;
+                                        top: calc(50% + 0px);
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        z-index: 1;
+                                        pointer-events: none;
+                                        animation: heartFlash 4s infinite ease-in-out;
+                                    }
+
+                                    @keyframes heartFlash {
+                                        0%,100% {
+                                            opacity: 1;
+                                            transform: translate(-50%,-50%) scale(1);
+                                        }
+
+                                        50% {
+                                            opacity: 0.3;
+                                            transform: translate(-50%,-50%) scale(1.15);
+                                        }
+                                    }
+                                

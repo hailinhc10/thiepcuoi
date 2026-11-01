@@ -1,0 +1,9 @@
+            .is-animation:not(.animation){opacity:0}
+            .com-image-block,#w-3subauj7{cursor:default}
+            #w-3subauj7{cursor:pointer}
+            @media (prefers-reduced-motion:reduce){.is-animation:not(.animation){opacity:1}}
+                    /* sửa lỗi dòng trống thừa khi thay chữ có xuống dòng */
+            .com-text-block[style*="pre-line"]{white-space:normal!important}
+            .com-text-block[style*="pre-line"] .text-block-css{white-space:pre-line}
+            #w-19tqxf4g .text-block-css{font-size:28px!important;line-height:1.1!important}
+        

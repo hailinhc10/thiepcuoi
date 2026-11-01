@@ -1,0 +1,16 @@
+            #ty-wrap{position:fixed;inset:0;z-index:2000000;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);padding:20px}
+            #ty-wrap.show{display:flex;animation:tyFade .3s ease-out}
+            #ty-box{position:relative;width:min(330px,100%);background:#fff;border:2px solid #7d1f2a;outline:1px solid #c9a45c;outline-offset:-8px;border-radius:14px;padding:34px 24px 26px;text-align:center;color:#222;box-shadow:0 20px 50px rgba(0,0,0,.35);animation:tyPop .55s cubic-bezier(.2,.9,.3,1.3)}
+            #ty-heart{font-size:54px;line-height:1;color:#7d1f2a;animation:tyBeat 1.2s infinite}
+            #ty-title{font-family:'AlexBrush-Regular.ttf','SVN-Mightiest.otf',serif;font-size:42px;line-height:1.2;color:#7d1f2a;margin:6px 0 10px}
+            #ty-msg{font-size:14px;line-height:1.7;white-space:pre-line;color:#333}
+            #ty-btn{margin-top:20px;border:0;background:#7d1f2a;color:#fff;font:600 15px Roboto,Arial,sans-serif;letter-spacing:1px;padding:10px 34px;border-radius:999px;cursor:pointer;box-shadow:0 4px 4px rgba(0,0,0,.25)}
+            .ty-fall{position:fixed;top:-30px;z-index:2000001;pointer-events:none;color:#e0555c;animation:tyFall linear forwards}
+            #rsvp-toast{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:2000002;background:#333;color:#fff;padding:10px 18px;border-radius:10px;font:14px Roboto,Arial,sans-serif;opacity:0;pointer-events:none;transition:opacity .3s;max-width:90vw;text-align:center}
+            #rsvp-toast.show{opacity:1}
+            @keyframes tyFade{from{opacity:0}to{opacity:1}}
+            @keyframes tyPop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+            @keyframes tyBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+            @keyframes tyFall{to{transform:translate3d(var(--dx,30px),110vh,0) rotate(360deg)}}
+            @media (prefers-reduced-motion:reduce){#ty-box,#ty-heart,#ty-wrap.show{animation:none}.ty-fall{display:none}}
+        

@@ -1,0 +1,79 @@
+                                    /* --- SỬA TRIỆT ĐỂ POPUP MỪNG CƯỚI --- */
+
+                                    /* 1. Đảm bảo khi bấm nút, các khối popup sẽ hiển thị đè lên trên cùng và nằm ở giữa màn hình */
+                                    #w-g81yux0n, #w-hqvc3ddh, .com-popup, .com-section-modal {
+                                        z-index: 999999 !important;
+                                    }
+
+                                    /* 2. Nếu popup đang bị ẩn display:none cứng, ta bắt buộc nó hiện dạng flex khi có kích hoạt */
+                                    #w-g81yux0n.active, #w-hqvc3ddh.active, .com-popup.active, .com-section-modal.active {
+                                        display: flex !important;
+                                        justify-content: center !important;
+                                        align-items: center !important;
+                                    }
+
+                                    /* 3. Làm cho lớp nền phía sau tối vừa phải và không làm mờ nội dung bên trong */
+                                    .modal-backdrop, .com-section-modal {
+                                        background-color: rgba(0, 0, 0, 0.75) !important;
+                                    }
+
+                                    /* 4. Ép ảnh QR code và khung chữ bên trong hiện rõ nét 100%, không bị mờ suốt */
+                                    #w-g81yux0n img, #w-hqvc3ddh img, .com-popup img {
+                                        opacity: 1 !important;
+                                        visibility: visible !important;
+                                    }
+
+                                    /* ====== STYLE: vị trí & hiệu ứng nút ====== */
+                                    #music-toggle {
+                                        position: fixed;
+                                        left: 14px;
+                                        /* ghim bên trái */
+                                        bottom: 14px;
+                                        z-index: 99999;
+                                        width: 56px;
+                                        height: 56px;
+                                        border-radius: 50%;
+                                        background: rgba(255, 255, 255, 0.3);
+                                        /* nền trắng */
+                                        backdrop-filter: blur(4px);
+                                        display: grid;
+                                        place-items: center;
+                                        cursor: pointer;
+                                        user-select: none;
+                                        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+                                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+                                    }
+
+                                    #music-toggle:hover {
+                                        transform: translateY(-1px) scale(1.03);
+                                        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+                                    }
+
+                                    #music-toggle img {
+                                        display: block;
+                                        width: 44px;
+                                        height: 44px;
+                                        object-fit: contain;
+                                        pointer-events: none;
+                                    }
+
+                                    #music-toggle.vibrating {
+                                        animation: wc-pulse 1.6s ease-out infinite;
+                                        background: rgba(255, 255, 255, 0.3);
+                                        /* nền trắng khi đang rung */
+                                    }
+
+                                    /* Ép hiển thị đúng icon trong mọi theme */
+                                    #music-toggle #play-icon, #music-toggle #pause-icon {
+                                        backface-visibility: visible !important;
+                                        -webkit-backface-visibility: visible !important;
+                                    }
+
+                                    /* Tối ưu chạm cho mobile */
+                                    @media (hover: none) {
+                                        #music-toggle {
+                                            bottom: 12px;
+                                            left: 12px;
+                                        }
+                                    }
+                                

@@ -1,0 +1,54 @@
+            @font-face {
+                font-family: "PinyonScript-Regular.ttf";
+                src: url("https://statics.pancake.vn/web-media/0f/81/6f/50/c0a25ed5e687570f2b43c16c1954969db6121095dcec2ad0745cdb0e-w:0-h:0-l:149276-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "UTM-Cafeta.ttf";
+                src: url("https://statics.pancake.vn/web-media/04/eb/01/7a/e19221a44fabb6fd54c6339fd43b1c25ebbe20e97f6633beed4cbc79-w:0-h:0-l:31526-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Ephesis-Regular.ttf";
+                src: url("https://statics.pancake.vn/web-media/65/48/68/4f/ca5a0c732f276b6fef504eddf0e2d6cdf65cf198b0440dde6d90c5a8-w:0-h:0-l:141771-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "BlackMango-Medium.otf";
+                src: url("https://statics.pancake.vn/web-media/f5/f1/41/aa/b6a0dd0c2a8cc07c0be70e066410a2cb9506e4ae9a3d88a8e238b53c-w:0-h:0-l:52546-t:application/octet-stream.otf") format("opentype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "SVN-Amstirdam.otf";
+                src: url("https://statics.pancake.vn/web-media/02/d0/0e/80/f9bdf73eea23ae87367bc3d4280c70f4925e79e6c38ec07cfb956ee5-w:0-h:0-l:95737-t:application/octet-stream.otf") format("opentype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "VNF-Shelia-Regular (1).ttf";
+                src: url("https://statics.pancake.vn/web-media/a0/d8/b3/81/47ff441bb69035853506ba95cdbb97aae97c387b81edddb1bc28e2fb-w:0-h:0-l:251778-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "UTM-Azkia.ttf";
+                src: url("https://statics.pancake.vn/web-media/35/7a/ab/a5/2bcc8b3414fa20782f68d8d552b13313f2a24e5b267a97b3cf3a5ec3-w:0-h:0-l:144905-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "SVN-Mightiest.otf";
+                src: url("https://statics.pancake.vn/web-media/38/a8/63/6b/be3591beaa1faddc0f76fe23aac05f5d907411cd2b0e4652bc5ed081-w:0-h:0-l:23809-t:application/octet-stream.otf") format("opentype");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "AlexBrush-Regular.ttf";
+                src: url("https://statics.pancake.vn/web-media/7f/17/e9/f1/cb9ca1db4d08288384fa9e241cbc74923dcbb9c5701b6caf519deb13-w:0-h:0-l:115722-t:application/octet-stream.ttf") format("truetype");
+                font-display: swap;
+            }
+        
