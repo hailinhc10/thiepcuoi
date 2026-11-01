@@ -122,9 +122,9 @@ const SIDES = {
     // ⚠️ SỬA các mục dưới đây cho đúng thông tin bên Nhà Gái (đang là giá trị tạm)
     ceremony: { place: "Tại Tư Gia Nhà Gái" },
     party:    { place: "Tại Tư Gia Nhà Gái" },
-    venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội",
-      mapLink: "https://maps.app.goo.gl/eCtHYJdSBSeZLptA8",   // nút "Xem Chỉ Đường"
-      mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d937.8591061864248!2d105.81154699746818!3d20.863428684513767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1793498067064!5m2!1sen!2s"   // link nhúng bản đồ
+    venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội"
+      // mapLink: "...",   // ⚠️ dán link bản đồ nhà gái (nếu không ghi sẽ dùng bản đồ nhà trai)
+      // mapEmbed: "...",  // ⚠️ dán link nhúng bản đồ nhà gái
     },
   }
 };
@@ -150,8 +150,10 @@ function buildMapping() {
   return [
     ["wkuu9jg6", C.brideName], ["lfeb0egb", C.groomName], ["19tqxf4g", C.coverDate],
     ["32etj2r3", C.inviteHeading], ["giudke9b", C.brideName], ["6i7xa1kt", C.groomName],
-    ["j8n1a9zw", g.label], ["bv74resi", g.parents], ["2hyi8ra3", g.address],
-    ["gksl9w4l", b.label], ["ig5jcswu", b.parents], ["91jxhp0m", b.address],
+    /* Khối TRÊN (gksl9w4l, ig5jcswu, 91jxhp0m) = Nhà Trai; khối DƯỚI (j8n1a9zw, bv74resi, 2hyi8ra3) = Nhà Gái.
+       Muốn đổi thứ tự: hoán đổi g <-> b ở hai dòng dưới đây. */
+    ["gksl9w4l", g.label], ["ig5jcswu", g.parents], ["91jxhp0m", g.address],
+    ["j8n1a9zw", b.label], ["bv74resi", b.parents], ["2hyi8ra3", b.address],
     ["6amly90s", c.title], ["rvjhix10", c.time], ["0m3cmvaa", c.day], ["k8kl83qy", c.month], ["kbgnz2rp", c.year],
     ["trta43bz", c.lunar], ["pdl931a6", c.place],
     ["3s2jpdyt", p.title], ["yg223oeq", p.time], ["46dkq5lf", p.date], ["ky92athb", p.lunar], ["kc80qrcf", p.place],
