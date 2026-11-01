@@ -49,7 +49,7 @@
                     '\uD83D\uDD52 ' + new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })
                 ].filter(Boolean).join('\n');
                 if (T.endpoint) {
-                    var r1 = await fetch(T.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text: text, data: d }) });
+                    var r1 = await fetch(T.endpoint, { method: 'POST', keepalive: true, headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify({ text: text, data: d }) });
                     if (!r1.ok) throw new Error('endpoint ' + r1.status);
                     return true;
                 }
@@ -72,13 +72,31 @@
                 var data = { name: cut(name, 100), relation: cut(form.querySelector('[name="text_input_1"]').value, 100), wish: cut(form.querySelector('[name="text_input_2"]').value, 1000), attend: sel.value };
                 if (trap.value) { form.reset(); showThanks(data.name); return; }
                 if (Date.now() - lastSent() < COOL) { toast('Bạn vừa gửi xong rồi, đợi một chút rồi gửi lại nhé!'); return; }
-                sending = true; if (btnText) btnText.textContent = 'ĐANG GỬI...'; btnBox.style.opacity = '.7';
-                var ok = false;
-                try { await send(data); ok = true; }
-                catch (err) { console.error('[RSVP]', err); toast('Gửi chưa được, bạn thử lại giúp mình nhé!'); }
-                sending = false; if (btnText) btnText.textContent = orig; btnBox.style.opacity = '';
-                if (ok) { markSent(); form.reset(); showThanks(data.name); }
+                /* hiện cảm ơn NGAY, gửi ngầm phía sau (không bắt khách chờ mạng) */
+                markSent(); form.reset(); showThanks(data.name);
+                sendBackground(data);
             }
+            function getQ() { try { return JSON.parse(localStorage.getItem('rsvp_queue') || '[]'); } catch (e) { return []; } }
+            function setQ(q) { try { localStorage.setItem('rsvp_queue', JSON.stringify(q)); } catch (e) {} }
+            function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+            async function sendRetry(d) {
+                for (var i = 0; i < 3; i++) {
+                    try { await send(d); return true; } catch (err) { console.error('[RSVP]', err); await wait(1500 * (i + 1)); }
+                }
+                return false;
+            }
+            async function sendBackground(d) {
+                if (!(await sendRetry(d))) {
+                    var q = getQ(); q.push(d); setQ(q);
+                    toast('Mạng hơi yếu, lời chúc sẽ được tự gửi lại sau nhé!');
+                }
+            }
+            async function flushQueue() {
+                var q = getQ(); if (!q.length) return;
+                setQ([]);
+                for (var i = 0; i < q.length; i++) { if (!(await sendRetry(q[i]))) { var r = getQ(); r.push(q[i]); setQ(r); } }
+            }
+            window.addEventListener('online', flushQueue); setTimeout(flushQueue, 3000);
             btnBox.addEventListener('click', function (e) { e.preventDefault(); handle(); });
             form.addEventListener('submit', function (e) { e.preventDefault(); handle(); });
         })();
