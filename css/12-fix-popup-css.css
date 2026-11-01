@@ -10,8 +10,13 @@
   background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important}
 .wc-qr-fail{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;
   font:13px/1.4 Barlow,Roboto,Arial,sans-serif;color:#7d1f2a;background:#fff}
-#wc-qr-tabs{position:fixed;left:50%;transform:translateX(-50%);top:calc(50% - 190px - 48px);z-index:1000002;display:none;gap:8px}
-#wc-qr-tabs.show{display:flex}
-#wc-qr-tabs button{border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.12);color:#fff;font:600 14px Barlow,Roboto,Arial,sans-serif;
-  letter-spacing:.5px;padding:7px 20px;border-radius:999px;cursor:pointer}
-#wc-qr-tabs button.on{background:#fff;color:#7d1f2a}
+
+/* nut sao chep so tai khoan */
+.wc-acc{white-space:nowrap}
+.wc-copy{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:8px;width:30px;height:30px;padding:0;
+  border:1px solid rgba(125,31,42,.35);border-radius:8px;background:#fff;color:#7d1f2a;cursor:pointer;pointer-events:auto;line-height:0;transition:background .15s,color .15s}
+.wc-copy:hover{background:#f6e9eb}
+.wc-copy.done{background:#7d1f2a;color:#fff;border-color:#7d1f2a}
+.wc-toast{position:fixed;left:50%;bottom:8%;transform:translateX(-50%) translateY(10px);z-index:1000003;background:rgba(0,0,0,.82);color:#fff;
+  font:500 14px/1.3 'Be Vietnam Pro',Barlow,Roboto,Arial,sans-serif;padding:9px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:90vw;text-align:center}
+.wc-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
