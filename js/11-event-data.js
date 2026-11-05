@@ -1334,7 +1334,7 @@
                             "type": "text-block",
                             "specials": {
                                 "tag": "h2",
-                                "text": "Trân Trọng Báo Tin Lễ Thành Hôn Của<br>"
+                                "text": "Trân Trọng Báo Tin Lễ Thành Hôn<br>"
                             },
                             "id": "32etj2r3",
                             "desktop": {
