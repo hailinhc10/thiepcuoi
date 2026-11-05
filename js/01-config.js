@@ -11,15 +11,15 @@ const CONFIG = {
   brideName: "Vũ Mây",                // tên hiện ở dưới / bên phải
   coverDate: "17.01\n2027",               // ngày hiện giữa hai tên ở bìa
   guestDefault: "Quý Khách",       // tên khách khi link không có ?guest=...
-  inviteHeading: "Trân Trọng Báo Tin Lễ Vu Quy Của",
+  inviteHeading: "Trân Trọng Báo Tin Lễ Thành Hôn Của",
 
   // ======== 2. HAI BÊN GIA ĐÌNH ========
   groomFamily: { label: "Nhà Trai", parents: "ÔNG Cấn Bá Long\nBÀ Kiều Thị Quyn", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội" },
   brideFamily: { label: "Nhà Gái", parents: "ÔNG Vũ Bá Kiền\nBÀ Dương Thị Thành", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội" },
 
   // ======== 3. LỄ VÀ TIỆC ========
-  ceremony: { title: "LỄ VU QUY", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Tại Nhà Văn Hóa Tuyết Nghĩa" },
-  party:    { title: "TIỆC MỪNG VU QUY", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Tại Nhà Văn Hóa Tuyết Nghĩa" },
+  ceremony: { title: "LỄ THÀNH HÔN", time: "Vào Lúc 13:30 | Chủ Nhật", day: "17", month: "Tháng 01", year: "2027", lunar: "(Tức Ngày 10 Tháng 12 Năm Bính Ngọ)", place: "Tại Nhà Văn Hóa Tuyết Nghĩa" },
+  party:    { title: "TIỆC MỪNG LỄ THÀNH HÔN", time: "16:00 - Thứ 7", date: "16.01.2027", lunar: "(Tức Ngày 09 Tháng 12 Năm Bính Ngọ)", place: "Tại Nhà Văn Hóa Tuyết Nghĩa" },
 
   // ======== 4. ĐỊA ĐIỂM & BẢN ĐỒ ========
   venue: { name: "NHÀ VĂN HÓA TUYẾT NGHĨA", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội",
@@ -121,8 +121,9 @@ const SIDES = {
     footer: { names: "VŨ MÂY & HẢI LINH" },
 
     // ⚠️ SỬA các mục dưới đây cho đúng thông tin bên Nhà Gái (đang là giá trị tạm)
-    ceremony: { place: "Tại Tư Gia Nhà Gái" },
-    party:    { place: "Tại Tư Gia Nhà Gái" },
+    inviteHeading: "Trân Trọng Báo Tin Lễ Vu Quy Của",   // Nhà Gái giữ nguyên "Vu Quy"
+    ceremony: { title: "LỄ VU QUY", place: "Tại Tư Gia Nhà Gái" },
+    party:    { title: "TIỆC MỪNG VU QUY", place: "Tại Tư Gia Nhà Gái" },
     venue: { name: "TƯ GIA NHÀ GÁI", address: "Thôn Vĩnh Dụ, Tam Hưng, Hà Nội",
       mapLink: "https://maps.app.goo.gl/eCtHYJdSBSeZLptA8",   // nút "Xem Chỉ Đường"
       mapEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d937.8591061864248!2d105.81154699746818!3d20.863428684513767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1793498067064!5m2!1sen!2s"   // link nhúng bản đồ
