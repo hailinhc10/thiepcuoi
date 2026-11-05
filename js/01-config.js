@@ -11,7 +11,7 @@ const CONFIG = {
   brideName: "Vũ Mây",                // tên hiện ở dưới / bên phải
   coverDate: "17.01\n2027",               // ngày hiện giữa hai tên ở bìa
   guestDefault: "Quý Khách",       // tên khách khi link không có ?guest=...
-  inviteHeading: "Trân Trọng Báo Tin Lễ Thành Hôn",
+  inviteHeading: "Trân Trọng Báo Tin Lễ Thành Hôn Của",
 
   // ======== 2. HAI BÊN GIA ĐÌNH ========
   groomFamily: { label: "Nhà Trai", parents: "ÔNG Cấn Bá Long\nBÀ Kiều Thị Quyn", address: "Thôn Tuyết Nghĩa, Kiều Phú, Hà Nội" },
