@@ -31,7 +31,7 @@ const CONFIG = {
     heart: "images/016.png" },
 
   // ======== 6. GỬI MỪNG CƯỚI ========
-  bank: { groom: "TECHCOMBANK - CAN HAI LINH\n500 11 99999", bride: "TECHCOMBANK - VU THI MAY\n500 11 99999" },
+  bank: { groom: "TECHCOMBANK - CAN HAI LINH\n5001 1999 99", bride: "TECHCOMBANK - VU THI MAY\n5001 1999 99" },
 
   // ======== 7. CHÂN TRANG ========
   footer: { quote: "Sự hiện diện của Quý khách là niềm vinh hạnh cho gia đình chúng tôi!", names: "HẢI LINH & VŨ MÂY" },

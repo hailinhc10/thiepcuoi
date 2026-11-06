@@ -2973,7 +2973,7 @@
                             "type": "text-block",
                             "specials": {
                                 "tag": "h4",
-                                "text": "TECHCOMBANK - CAN HAI LINH<br>500 11 99999 <br>"
+                                "text": "TECHCOMBANK - CAN HAI LINH<br>5001 1999 99 <br>"
                             },
                             "id": "k0vu3e5e",
                             "desktop": {
